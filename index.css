@@ -53,16 +53,38 @@ h1 {
     backdrop-filter: blur(4px);
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    padding: 15px;
 }
 
 #display-window {
     display: flex;
     background-color: rgba(82, 81, 81, 0.418);
     font-size: 220%;
-    margin: 20px;
     padding: 5px;
-    min-height: 100px;
+    min-height: 125px;
     color: whitesmoke;
     align-items: end;
     justify-content: end;
+    margin-bottom: 25px;
+}
+
+#num-buttons{
+    background-color: rgba(145, 145, 145, 0.418);
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#operation-buttons{
+    background-color: rgba(145, 145, 145, 0.418);
+    flex-grow: 1;
+}
+
+.calc-button{
+    flex-grow: 1;
+    min-width: 125px;
+    max-height: 70px;
+    font-size: x-large;
 }
