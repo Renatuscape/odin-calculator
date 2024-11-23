@@ -62,11 +62,13 @@ h1 {
     background-color: rgba(82, 81, 81, 0.418);
     font-size: 220%;
     padding: 5px;
-    min-height: 125px;
+    min-height: 135px;
+    max-height: 135px;
     color: whitesmoke;
     align-items: end;
     justify-content: end;
     margin-bottom: 25px;
+    word-break:break-all;
 }
 
 #num-buttons{
@@ -75,11 +77,15 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 5px;
 }
 
 #operation-buttons{
     background-color: rgba(145, 145, 145, 0.418);
     flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
 }
 
 .calc-button{
@@ -87,4 +93,15 @@ h1 {
     min-width: 125px;
     max-height: 70px;
     font-size: x-large;
+    border-radius: 0;
+}
+
+#clear-button{
+    background-color: #57656dbb;
+    color: whitesmoke;
+    max-height: 35px;
+}
+
+#sum-button{
+    max-height: 35px;
 }
