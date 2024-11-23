@@ -1,39 +1,55 @@
-const displayWindow = document.getElementById('display-window');
-const numBtnContainer = document.getElementById('num-buttons');
+const displayWindow = document.getElementById("display-window");
+const numBtnContainer = document.getElementById("num-buttons");
 
 let displayText = 0;
 
-let input1 = '';
-let input2 = '';
-let operator = '';
+let input1 = "";
+let input2 = "";
+let operator = "";
+
+function add(x, y) {
+  return x + y;
+}
+
+function subtract(x, y) {
+  return x - y;
+}
+
+function multiply(x, y) {
+  return x * y;
+}
+
+function divide(x, y) {
+  return x / y;
+}
 
 function buildButtons() {
-    for (let i = 0; i < 10; i++) {
-        const button = document.createElement("button");
-        button.className = 'calc-button';
-        button.title = i.toString();
-        button.innerHTML = i.toString();
+  for (let i = 0; i < 10; i++) {
+    const button = document.createElement("button");
+    button.className = "calc-button";
+    button.title = i.toString();
+    button.innerHTML = i.toString();
 
-        numBtnContainer.appendChild(button);
-    }
+    numBtnContainer.appendChild(button);
+  }
 }
 
 function setDisplay() {
-    let textContent = 0;
+  let textContent = 0;
 
-    if (input1 !== '') {
-        textContent = input1;
+  if (input1 !== "") {
+    textContent = input1;
 
-        if (operator !== '') {
-            textContent += ' ' + operator;
+    if (operator !== "") {
+      textContent += " " + operator;
 
-            if (input2 !== '') {
-                textContent += ' ' + input2;
-            }
-        }
+      if (input2 !== "") {
+        textContent += " " + input2;
+      }
     }
+  }
 
-    displayWindow.innerHTML = textContent;
+  displayWindow.innerHTML = textContent;
 }
 
 buildButtons();
