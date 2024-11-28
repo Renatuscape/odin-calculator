@@ -1,5 +1,5 @@
 * {
-    font-family: "Linux Biolinum", "Gill Sans", sans-serif;
+    font-family: "Segoe UI", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,12 +16,6 @@ body {
     overflow-x: hidden;
     background-image: url("repeating_texture_metal.jpg");
     background-repeat: repeat;
-}
-
-h1 {
-    font-size: 250%;
-    letter-spacing: 10px;
-    transform: scale(1, 1.2);
 }
 
 .background {
@@ -112,5 +106,5 @@ h1 {
 #sum-button {
     min-height: 50px;
     font-size: xx-large;
-    font-weight: 900;
+    font-weight: bolder;
 }
