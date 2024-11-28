@@ -48,6 +48,14 @@ body {
     flex-direction: column;
     gap: 10px;
     padding: 15px;
+
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(0,0,0,0.1));
+    box-shadow: 
+        inset -1px -1px 2px rgba(0,0,0,0.1),
+        inset 1px 1px 2px rgba(255,255,255,0.3),
+        0 2px 4px rgba(0,0,0,0.2); 
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.1s ease;
 }
 
 #display-window {
@@ -62,6 +70,11 @@ body {
     justify-content: end;
     margin-bottom: 25px;
     word-break: break-all;
+
+    box-shadow: 
+        inset 8px 8px 1px rgba(70, 70, 70, 0.3),  /* top-left inner shadow */
+        0 2px 4px rgba(255, 255, 255, 0.2);  /* outer highlight for greater depth effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #button-panels {
@@ -95,16 +108,25 @@ body {
     flex-grow: 1;
     font-size: x-large;
     border-radius: 0;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(0,0,0,0.1));
+    box-shadow: 
+        inset -1px -1px 2px rgba(0,0,0,0.1),  /* top-left inner shadow */
+        inset 1px 1px 2px rgba(255,255,255,0.3),  /* bottom-right inner shadow */
+        0 2px 4px rgba(0,0,0,0.2);  /* outer shadow for depth */
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.1s ease;
 }
 
 #clear-button {
     background-color: #57656dbb;
     color: whitesmoke;
     min-height: 45px;
+    margin: 5px;
 }
 
 #sum-button {
     min-height: 50px;
     font-size: xx-large;
     font-weight: bolder;
+    margin: 5px;
 }
