@@ -73,7 +73,7 @@ h1 {
 
 #num-buttons{
     background-color: rgba(145, 145, 145, 0.418);
-    flex-grow: 2;
+    flex-grow: 3;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -90,8 +90,8 @@ h1 {
 
 .calc-button{
     flex-grow: 1;
-    min-width: 125px;
-    max-height: 70px;
+    min-width: 95px;
+    max-height: 90px;
     font-size: x-large;
     border-radius: 0;
 }
