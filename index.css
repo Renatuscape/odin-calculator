@@ -61,8 +61,8 @@ body {
 #display-window {
     display: flex;
     background-color: rgba(82, 81, 81, 0.418);
-    font-size: 220%;
-    padding: 5px;
+    font-size: 190%;
+    padding: 5px 15px;
     min-height: 135px;
     max-height: 135px;
     color: whitesmoke;
